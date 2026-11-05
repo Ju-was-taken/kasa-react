@@ -1,5 +1,6 @@
 import Collapse from "../components/Collapse";
-import Banner from '../components/Banner'
+import Banner from '../components/Banner';
+import bannerAbout from '../assets/Banner2.png';
 
 
 
@@ -9,7 +10,7 @@ function About() {
     
 
 
-            <Banner  />
+            <Banner text={''} image={bannerAbout}  />
 
 <div className="about-collapse">
         <Collapse content="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulierement vérifiées par nos équipes" title="Fiabilité"/>

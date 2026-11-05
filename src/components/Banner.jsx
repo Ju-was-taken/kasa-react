@@ -1,12 +1,12 @@
-import bannerImg from '../assets/Banner.png'
 
 
-function Banner({ text }) {
+
+function Banner({ image , text }) {
     return(
         <div className="banner">
             <div className='banner__overlay'></div>
-            <h2 className="banner__title">Chez vous, partout et ailleurs</h2>
-            <img className='banner__img' src={bannerImg} alt="Banner" />
+            { text && <h2 className="banner__title">{text}</h2>}
+            <img className='banner__img' src={image} alt="Banner" />
         </div>
     )
 }

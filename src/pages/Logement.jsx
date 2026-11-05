@@ -27,7 +27,7 @@ function Logement() {
                 
                 <div className="logement-header__left">
                     <div>
-                        <h1>{logementActuel.title}</h1>
+                        <h2>{logementActuel.title}</h2>
                         <p>{logementActuel.location}</p>
                     </div>
 
