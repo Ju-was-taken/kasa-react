@@ -31,6 +31,8 @@ function Logement() {
                         <p>{logementActuel.location}</p>
                     </div>
 
+
+                    
                     <div className='logement-tag'>
                         {logementActuel.tags.map((tag) => (
                             <div className='tag' key={tag}>{tag}</div>

@@ -1,7 +1,7 @@
 import bannerImg from '../assets/Banner.png'
 
 
-function Banner() {
+function Banner({ text }) {
     return(
         <div className="banner">
             <div className='banner__overlay'></div>
