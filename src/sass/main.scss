@@ -2,6 +2,7 @@
 @import "slideshow";
 @import "logement";
 @import "about";
+@import "error";
 
 $color-a: #FF6060;
 $color-footer: #000000;
@@ -13,6 +14,9 @@ $color-footer: #000000;
     margin: 0;
     padding: 0;
 }
+
+
+
 
 
 body {
@@ -37,8 +41,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    
-
 
     &__nav {
         ul {
@@ -46,17 +48,21 @@ body {
             gap: 34px;
         }
 
-        li{
+        li {
             list-style: none;
-            
-            
         }
 
-        a {
+  
+        .header__link {
             text-decoration: none;
-            color: $color-footer;
+            color: black;
             font-size: 24px;
             font-weight: 500;
+
+            
+            &.active { 
+                text-decoration: underline;
+            }
         }
     }
 }

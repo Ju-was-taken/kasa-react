@@ -1,0 +1,36 @@
+.error {
+
+    min-height: calc(100vh - 200px); 
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 120px;
+
+
+    h2 {
+        font-weight: 700;
+        font-size: 288px;
+        font-family: 'Montserrat';
+        color: #ff6060;
+        margin: 0; 
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 36px;
+        color: #ff6060;
+        font-family: 'Montserrat';
+        margin: 0;
+    }
+
+
+    .error-link {
+        font-weight: 500;
+        font-size: 18px;
+        font-family: 'Montserrat';
+        text-decoration: underline;
+        color: black; 
+    }
+}
