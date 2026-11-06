@@ -17,7 +17,11 @@ $color-footer: #000000;
 
 
 
-
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 body {
     font-family: 'Montserrat';
@@ -33,6 +37,11 @@ body {
     padding: 0 100px; 
     max-width: 1440px; 
     margin: 0 auto; 
+    @media (max-width: 768px) {
+        padding: 0 20px; 
+        max-width: 100%;
+        width: 100%;
+    }
 }
 
 
@@ -42,12 +51,27 @@ body {
     align-items: center;
     padding: 20px 0;
 
+
+    &__img {
+    
+        
+        @media (max-width: 768px) {
+            height: 47px; 
+            width: auto; 
+            padding-right: 35px;
+        }
+    }
+
     &__nav {
         ul {
             display: flex;
             gap: 34px;
-        }
 
+            @media (max-width: 768px) {
+                gap: 40px; 
+            }
+        }
+       
         li {
             list-style: none;
         }
@@ -59,13 +83,26 @@ body {
             font-size: 24px;
             font-weight: 500;
 
+            @media (max-width: 768px) {
+                font-size: 12px;
+                text-transform: uppercase; 
+            }
+
             
             &.active { 
                 text-decoration: underline;
             }
         }
     }
+
+
+    @media(max-width: 768px) {
+        padding-left: 19px;
+        padding-right: 19px;
+    }
 }
+
+
 
 
 
@@ -77,6 +114,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 768px) {
+        height: 111px; 
+        margin-bottom: 20px; 
+    }
 
 
     &__overlay{
@@ -96,6 +138,7 @@ body {
         color: #FFFFFF;
         z-index: 3;
 
+
         
 
     }
@@ -108,6 +151,20 @@ body {
         object-fit: cover;
         z-index: 1;
     }
+
+    @media (max-width : 768px) {
+        height: 111px;
+        border-radius: 10px;
+
+
+        &__title {
+            font-size: 24px;
+            text-align: left;
+            padding: 0 16px;
+        }
+    }
+
+
 }
 
 
@@ -121,6 +178,15 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-top: 40px;
+
+
+
+    @media(max-width: 768px ) {
+    grid-template-columns: 1fr;
+    background-color: transparent;
+    padding: 0;
+    gap: 20px;
+}
 }
 
 
@@ -155,7 +221,8 @@ body {
     background-color: $color-footer;
     color: #ffffff;
     padding: 40px 0;
-    margin-top: 55px;
+    flex-grow: 1;
+
 
     &__container {
         display: flex;
@@ -166,5 +233,15 @@ body {
 
     &__logo {
         width: 122px;
+        padding: 40px 0;
     }
+
+
+
+
 }
+
+
+
+
+

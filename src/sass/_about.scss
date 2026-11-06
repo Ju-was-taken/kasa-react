@@ -1,6 +1,25 @@
+.about {
+   
+    
+    @media (max-width: 768px) {
+        width: 100%; 
+    }
+}
+
+
+
 .about-collapse {
     margin-top: 50px; 
     display: flex;
     flex-direction: column;
     gap: 30px; 
+
+
+    @media (max-width :768px) {
+        width: 100%; 
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
 }
+

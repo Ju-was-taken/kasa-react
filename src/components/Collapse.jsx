@@ -12,7 +12,11 @@ function Collapse( {title, content}) {
 
         <div className='collapse__header' onClick={() => setIsOpen(!isOpen)}>
             <h3>{title}</h3>
-            <img src={ isOpen ? flecheBas : flecheHaut} alt="arrow" />
+            <img 
+                    className={`collapse__arrow ${isOpen ? "active" : ""}`} 
+                    src={flecheHaut} 
+                    alt="arrow" 
+                />
         </div>
 
         {isOpen && ( 
