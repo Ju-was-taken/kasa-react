@@ -2,7 +2,7 @@ import { useState } from 'react';
 import flecheGauche from '../assets/slide-left.png'
 import flecheDroite from '../assets/slide-right.png'
 
-function Slideshow ({ pictures}) {
+function Slideshow({ pictures }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const hasMultiplePictures = pictures.length > 1;
@@ -20,7 +20,7 @@ function Slideshow ({ pictures}) {
 
 
     const previousImage = () => {
-        if (currentIndex <= 0 ) {
+        if (currentIndex <= 0) {
             setCurrentIndex(pictures.length - 1)
         } else {
             setCurrentIndex(currentIndex - 1)
@@ -32,12 +32,12 @@ function Slideshow ({ pictures}) {
                 src={pictures[currentIndex]}
                 alt="image du logement"
                 className='slideshow__image'
-                />
+            />
 
 
-                {hasMultiplePictures && (
-                    <>
-                    
+            {hasMultiplePictures && (
+                <>
+
                     <button onClick={previousImage} className='slideshow__arrow slideshow__arrow__left'>
 
                         <img src={flecheGauche} alt='Previous' />
@@ -46,14 +46,14 @@ function Slideshow ({ pictures}) {
                     <button onClick={nextImage} className='slideshow__arrow slideshow__arrow__right'>
 
                         <img src={flecheDroite} alt='Next' />
-                        
+
                     </button>
 
                     <span className='slideshow__counter'>
                         {currentIndex + 1} / {pictures.length}
                     </span>
-                    </>
-                )}
+                </>
+            )}
         </div>
     )
 }

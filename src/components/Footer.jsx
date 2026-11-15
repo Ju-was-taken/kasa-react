@@ -1,7 +1,7 @@
-import logoFooter from '../assets/logo__footer.png'; 
+import logoFooter from '../assets/logo__footer.png';
 
 function Footer() {
-    return(
+    return (
         <footer className="footer">
             <div className="footer__container">
                 <h2 className="footer__logo">

@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png'; 
+import logo from '../assets/logo.png';
 
 function Header() {
-    return(
+    return (
         <header className="header">
             <h1 className="header__logo">
                 <img className="header__img" src={logo} alt="Kasa" />
@@ -15,7 +15,7 @@ function Header() {
                     <li>
                         <NavLink to="/about" className="header__link">A propos</NavLink>
                     </li>
-                    
+
                 </ul>
             </nav>
         </header>

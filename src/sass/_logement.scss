@@ -14,7 +14,7 @@
         gap: 15px;
 
 
-        h2{
+        h2 {
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: 36px;
@@ -28,7 +28,7 @@
         }
 
 
-        p{
+        p {
             font-family: 'Montserrat';
             font-weight: 500;
             font-size: 18px;
@@ -110,7 +110,7 @@
 
 
     @media (max-width: 768px) {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         font-size: 10px;
     }
 }
@@ -134,14 +134,14 @@
 .logement-rating {
     display: flex;
     gap: 5px;
-    font-size: 24px; 
+    font-size: 24px;
     gap: 10px;
 }
 
 
-.star-icon{
+.star-icon {
     height: 20px;
-   
+
 }
 
 
@@ -154,6 +154,6 @@
     @media (max-width: 768px) {
         flex-direction: column;
         gap: 20px;
-       
+
     }
 }

@@ -11,28 +11,28 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
 
-        <Header />
+            <Header />
 
 
-        <main>
-        <Routes>
-            {/* <Route element={<Layout />}> */}
-                <Route path="/" element={<Home />} />
-                <Route path="about" element={<About />} />
-                <Route path="logement/:id" element={<Logement />} />
+            <main>
+                <Routes>
+                    {/* <Route element={<Layout />}> */}
+                    <Route path="/" element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="logement/:id" element={<Logement />} />
 
-                <Route path="*" element={<Error />} />
+                    <Route path="*" element={<Error />} />
 
-                {/* </Route> */}
-
-            
-            
-        </Routes>
-
-        </main>
+                    {/* </Route> */}
 
 
-        <Footer />
+
+                </Routes>
+
+            </main>
+
+
+            <Footer />
         </BrowserRouter>
     )
 }

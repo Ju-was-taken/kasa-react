@@ -4,25 +4,24 @@ import flecheBas from '../assets/flecheBas.png'
 
 import { useState } from 'react';
 
-function Collapse( {title, content}) {
+function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
-    return(
+    return (
         <div className='collapse'>
 
-        <div className='collapse__header' onClick={() => setIsOpen(!isOpen)}>
-            <h3>{title}</h3>
-            <img 
-                    className={`collapse__arrow ${isOpen ? "active" : ""}`} 
-                    src={flecheHaut} 
-                    alt="arrow" 
+            <div className='collapse__header' onClick={() => setIsOpen(!isOpen)}>
+                <h3>{title}</h3>
+                <img
+                    className={`collapse__arrow ${isOpen ? "active" : ""}`}
+                    src={flecheHaut}
+                    alt="arrow"
                 />
-        </div>
+            </div>
 
-        {isOpen && ( 
-        <div className='collapse__content'>
-            <div>{content}</div>
-        </div>)}
+            <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+                <div className="collapse__text">{content}</div>
+            </div>
 
         </div>
     )

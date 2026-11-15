@@ -1,11 +1,11 @@
 .error {
 
-    min-height: calc(100vh - 200px); 
-    
+    min-height: calc(100vh - 200px);
+
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     gap: 120px;
 
 
@@ -14,7 +14,7 @@
         font-size: 288px;
         font-family: 'Montserrat';
         color: #ff6060;
-        margin: 0; 
+        margin: 0;
 
 
         @media (max-width : 768px) {
@@ -29,11 +29,11 @@
         font-family: 'Montserrat';
         margin: 0;
 
-        
+
         @media (max-width : 768px) {
             font-size: 18px;
             text-align: center;
-    
+
         }
     }
 
@@ -43,10 +43,10 @@
         font-size: 18px;
         font-family: 'Montserrat';
         text-decoration: underline;
-        color: black; 
+        color: black;
 
 
-                
+
         @media (max-width : 768px) {
             font-size: 14px;
         }

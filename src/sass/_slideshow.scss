@@ -10,10 +10,10 @@
         border-radius: 25px;
 
 
-        
 
 
-        
+
+
     }
 
 
@@ -27,15 +27,15 @@
         transform: translateY(-50%);
 
 
-            img {
-                @media (max-width: 768px) {
-                    height: 24px; 
-                    width: auto;  
-                }
+        img {
+            @media (max-width: 768px) {
+                height: 24px;
+                width: auto;
             }
+        }
 
 
-        
+
     }
 
 
@@ -50,7 +50,7 @@
     }
 
 
-    &__counter{
+    &__counter {
         position: absolute;
         bottom: 20px;
         left: 50%;
@@ -60,8 +60,8 @@
 
 
         @media (max-width: 768px) {
-        display: none; 
-    }
+            display: none;
+        }
     }
 
 }
