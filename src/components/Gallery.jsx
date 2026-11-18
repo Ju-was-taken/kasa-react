@@ -13,6 +13,8 @@ function Gallery() {
                     title={logement.title}  // On récupère le vrai titre
                     cover={logement.cover}  // On récupère la vraie image
                 />
+
+                
             ))}
         </section>
     )
