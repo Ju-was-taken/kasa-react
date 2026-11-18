@@ -1,9 +1,7 @@
-
-
 import { Link } from 'react-router-dom';
 
 function Error() {
-    return(
+    return (
         <main className="error">
             <h2>404</h2>
             <h3>Oups! La page que vous avez demandée n'existe pas.</h3>

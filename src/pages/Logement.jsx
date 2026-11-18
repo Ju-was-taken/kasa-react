@@ -21,10 +21,10 @@ function Logement() {
         <div className="logement-page">
             <Slideshow pictures={logementActuel.pictures} />
 
-            
+
             <div className="logement-header">
-                
-                
+
+
                 <div className="logement-header__left">
                     <div>
                         <h2>{logementActuel.title}</h2>
@@ -32,7 +32,7 @@ function Logement() {
                     </div>
 
 
-                    
+
                     <div className='logement-tag'>
                         {logementActuel.tags.map((tag) => (
                             <div className='tag' key={tag}>{tag}</div>
@@ -40,36 +40,36 @@ function Logement() {
                     </div>
                 </div>
 
-                
+
                 <div className="logement-header__right">
                     <div className='logement-host'>
-                       <p>
-                       {firstName}
+                        <p>
+                            {firstName}
                             <br />
-                     {lastName}
-                          </p>
+                            {lastName}
+                        </p>
                         <img src={logementActuel.host.picture} alt="" />
                     </div>
 
-<div className='logement-rating'>
-    {etoiles.map((star) => (
-        <img 
-            key={star} 
-            src={star <= logementActuel.rating ? starFull : starEmpty} 
-            alt={star <= logementActuel.rating ? "Étoile pleine" : "Étoile vide"}
-            className="star-icon"
-        />
-    ))}
-</div>
+                    <div className='logement-rating'>
+                        {etoiles.map((star) => (
+                            <img
+                                key={star}
+                                src={star <= logementActuel.rating ? starFull : starEmpty}
+                                alt={star <= logementActuel.rating ? "Étoile pleine" : "Étoile vide"}
+                                className="star-icon"
+                            />
+                        ))}
+                    </div>
                 </div>
 
             </div>
-           
+
 
             <div className='logement-collapse'>
-                <Collapse content={logementActuel.description} title="Description"/>
+                <Collapse content={logementActuel.description} title="Description" />
                 <Collapse content={logementActuel.equipments.map((equipement) =>
-                <p key={equipement}>{equipement}</p> )} title="Equipement"/>
+                    <p key={equipement}>{equipement}</p>)} title="Equipement" />
             </div>
         </div>
     );

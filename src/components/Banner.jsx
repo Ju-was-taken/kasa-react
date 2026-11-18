@@ -1,6 +1,3 @@
-
-
-
 function Banner({ image, text }) {
     return (
         <div className="banner">
